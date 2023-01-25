@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><style></style></head><body><u></u>
+
+    <div>
+    
+      <div style="padding-top:2rem;margin:0px auto;max-width:700px">
+        <form target="_blank" action="saveToFile.txt" method="post">
+          <div class="m_form-row">
+              <div class="m_form-group m_col-md-12"><label for="m_search">Search</label><input type="text" class="m_form-control" id="m_search"></div>
+            </div><button type="submit" class="m_btn m_btn-primary">Search</button>
+        </form>
+        <ul class="m_list-group m_list-group-flush m_py-2">
+          <li class="m_list-group-item">
+            <div>
+              <div class="m_card-body">
+                <h5 class="m_card-title">Mel&#39;s Micro</h5>
+                <h6 class="m_card-subtitle m_mb-2">brewpub</h6>
+                <h6 class="m_card-subtitle m_mb-2 m_text-muted">Wisconsin - Richland Center</h6><a href="https://www.google.com/url?q=http://www.melsmicro.com&amp;source=gmail-html&amp;ust=1674720065474000&amp;usg=AOvVaw1FI-YYcYmhdEnNHUhzqyGx" class="m_card-link" target="_blank" rel="noreferrer">Link to website</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <u></u><button class="m_btn-secondary">Load more</button><u></u>
+      </div>
+    
+    </div>
+    
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const searchValue = document.getElementById("m_search").value;
+  
+            // Save the data to local storage
+            localStorage.setItem('searchValue', searchValue);
+            }
+        </script>
+
+    </body></html>
